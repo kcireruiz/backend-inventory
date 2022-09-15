@@ -11,5 +11,6 @@ public interface ICategoryService {
 	public ResponseEntity<CategoryResponseRest> searchId(Long id);
 	public ResponseEntity<CategoryResponseRest> save(Category category);
 	public ResponseEntity<CategoryResponseRest> update(Category category, Long id);
+	public ResponseEntity<CategoryResponseRest> delete(Long id);
 	
 }
