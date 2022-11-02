@@ -24,6 +24,11 @@ public class CategoryRestController {
 	@Autowired
 	private ICategoryService service;
 	
+	@GetMapping("/ejemplo")
+	public String ejemplo(){
+		
+		return "ejemplo";
+	}
 	
 	@GetMapping("/categories")
 	public ResponseEntity<CategoryResponseRest> searchCategories(){
